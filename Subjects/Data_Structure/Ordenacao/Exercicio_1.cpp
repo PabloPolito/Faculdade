@@ -7,6 +7,7 @@ using namespace std;
 
 typedef int TChave;
 typedef char TInfo[255];
+
 typedef struct {
     TChave chave;
     TInfo info;
@@ -26,41 +27,54 @@ void mostra(TVetor v, int n) {
 }
 
 void ordena(TVetor v, int n) {
+    int i, j;
+    TDado x;
+    
+    mostra(v, n);
+    
+    for (i=1; i<n; i++) {
+        for (j=n-1; j>=i; j--) {
+            if (v[j-1].chave > v[j].chave) {
+                x = v[j-1];
+                v[j-1] = v[j];
+                v[j] = x;
+            }
+            mostra(v, n);
+        }
+    }
+    mostra(v, n);
 }
 
 int main() {
-
     FILE *arquivo;
     4/11;
     TVetor v;
     int n, i;
-    
     cout << endl << "Abrindo Arquivo...";
-    
     arquivo = fopen("./Ordenar.txt", "rt");
     
     if (!arquivo) {
-        cout << endl << "Erro!" << endl;
-        return 1;
+    cout << endl << "Erro!" << endl;
+    return 1;
     }
- 
+
     cout << endl << "Arquivo Aberto!" << endl;
     cout << endl << "Carregando Dados...";
- 
+    
     i = 0;
     
     while (!feof(arquivo) && (i<MAX)) {
         fscanf(arquivo, "%d,%s", &v[i].chave, v[i].info);
         i++;
     }
- 
+    
     n = i;
     
     if (!feof(arquivo)) {
         cout << endl << "Erro!" << endl;
-    return 2;
+        return 2;
     }
-
+    
     cout << endl << "Dados Carregados!" << endl;
     cout << endl << "Fechando Arquivo...";
     
@@ -82,7 +96,7 @@ int main() {
     }
     
     cout << endl << "Arquivo Aberto!" << endl;
-
+    
     5/11;
     
     cout << endl << "Armazenando Dados...";
@@ -97,6 +111,5 @@ int main() {
     fclose(arquivo);
     
     cout << endl << "Arquivo Fechado!" << endl;
-    
     return 0;
 }
