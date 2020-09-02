@@ -10,7 +10,7 @@ class Professor{
         }
 }
 
-public class Faculdade{
+class Faculdade{
     public static void main(String args[]){
         Professor professorUm = new Professor();
         professorUm.nome = "Pablo";
