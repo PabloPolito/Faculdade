@@ -1,4 +1,4 @@
-class ContaBancaria {
+class Conta {
 	public String titular;
 	public String email;
 	public double saldo;
@@ -23,34 +23,34 @@ class ContaBancaria {
         }
 
 
-    public String extratoSimples() {
+    public String Extrato() {
 		 return "\n Correntista:  " + titular + "\n Valor atual da conta:   " + saldo + "\n Email: " + email;
 	    }
 }
 
-class ProgramaAgencia {
+class Agencia {
     public static void main(String args[]) {
 
-        ContaBancaria contaUm = new ContaBancaria();
+        Conta contaUm = new Conta();
             contaUm.titular = "Eliane";
             contaUm.saldo = 100;
-            System.out.println(contaUm.extratoSimples());
+            System.out.println(contaUm.Extrato());
             
-        ContaBancaria contaDois = new ContaBancaria();
+        Conta contaDois = new Conta();
             contaDois.titular = "Henrique";
             contaDois.saldo = 600;
-            System.out.println(contaDois.extratoSimples());
+            System.out.println(contaDois.Extrato());
             
-        ContaBancaria contaTres = new ContaBancaria();
+        Conta contaTres = new Conta();
             contaTres.titular = "Pablo";
             contaTres.saldo = 15000;
             contaTres.email = "pablopietropolito@gmail.com";
-            System.out.println(contaTres.extratoSimples()); 
+            System.out.println(contaTres.Extrato()); 
  
             System.out.println("");
             
             contaTres.deposito(1000);
-            System.out.println(contaTres.extratoSimples());
+            System.out.println(contaTres.Extrato());
 
     }
 }
