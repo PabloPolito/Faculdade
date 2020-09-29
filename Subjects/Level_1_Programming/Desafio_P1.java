@@ -27,7 +27,8 @@ class Hospital {
     		String variavelNome = info.nextLine();
 		System.out.println("Digite o tipo de enfermidade do mesmo");
     		String variavelDoenca = info.nextLine();
-	Paciente pacienteUm = new Paciente(variavelNome,variavelDoenca);
+
+			Paciente pacienteUm = new Paciente(variavelNome,variavelDoenca);
 
 while(true) {
 	Scanner entradaDados = new Scanner( System.in ); 
