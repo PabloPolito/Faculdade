@@ -91,5 +91,6 @@ class ListaEnderecos {
         //vincula o endereço
         individuoUm.setEndereco(enderecoUm);
         System.out.println(individuoUm);
+        info.close();
     }
 }
