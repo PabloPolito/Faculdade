@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Livraria",
+            "request": "launch",
+            "mainClass": "Livraria",
+            "projectName": "Faculdade_6eef2180"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ListaEndereco",
             "request": "launch",
             "mainClass": "ListaEndereco",
