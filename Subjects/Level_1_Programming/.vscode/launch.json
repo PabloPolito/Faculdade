@@ -1,0 +1,43 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - Biblioteca",
+			"request": "launch",
+			"mainClass": "Biblioteca",
+			"projectName": "Level_1_Programming_56f23d17"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - Empresa",
+			"request": "launch",
+			"mainClass": "Empresa",
+			"projectName": "Level_1_Programming_56f23d17"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - Hardware",
+			"request": "launch",
+			"mainClass": "Interdisciplinar.Hardware",
+			"projectName": "Level_1_Programming_56f23d17"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - GerarPessoas",
+			"request": "launch",
+			"mainClass": "GerarPessoas",
+			"projectName": "Level_1_Programming_56f23d17"
+		},
+		{
+			"type": "totvs_language_debug",
+			"request": "launch",
+			"name": "TOTVS Language Debug",
+			"program": "${command:AskForProgramName}",
+			"cwb": "${workspaceFolder}",
+			"smartclientBin": "C:/totvs/bin/smartclient/smartclient.exe",
+			"isMultiSession": true,
+			"enableTableSync": true
+		}
+	]
+}

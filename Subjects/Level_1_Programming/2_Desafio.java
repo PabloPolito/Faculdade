@@ -1,6 +1,6 @@
 import java.util.Scanner; 
 
-class Livro {
+class Teste {
 public String titulo;
 public String autor;
 public int numeroPaginas;
@@ -13,7 +13,7 @@ class CriarLivros{
 	public static void main (String args[])  {
 	
 	Scanner entradaDados = new Scanner( System.in );
-	Livro livroUm = new Livro();
+	Teste livroUm = new Teste();
 	
 	System.out.print( "Digite o titulo do livro:  "); 
 	livroUm.titulo = entradaDados.nextLine(); 
